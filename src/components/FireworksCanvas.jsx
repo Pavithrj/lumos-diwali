@@ -12,8 +12,6 @@ export default function FireworksCanvas({ width, height }) {
         canvas.width = SCREEN_WIDTH;
         canvas.height = SCREEN_HEIGHT;
 
-        console.log("FireworksCanvas mounted with size:", SCREEN_WIDTH, SCREEN_HEIGHT);
-
         let rockets = [];
         let particles = [];
         const MAX_PARTICLES = 400;
@@ -153,5 +151,7 @@ export default function FireworksCanvas({ width, height }) {
         return () => clearInterval(interval);
     }, [width, height]);
 
-    return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full pointer-events-none" />;
+    // return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full pointer-events-none" />;
+
+    return <canvas ref={canvasRef} />;
 }
