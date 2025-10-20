@@ -26,9 +26,10 @@ export default function FireworksCanvas({ width, height }) {
                 this.gravity = 0;
                 this.flick = false;
                 this.alpha = 1;
-                this.fade = 0;
+                this.fade = 0.01;
                 this.color = 0;
             }
+
             update() {
                 this.vel.x *= this.resistance;
                 this.vel.y *= this.resistance;
@@ -38,22 +39,34 @@ export default function FireworksCanvas({ width, height }) {
                 this.size *= this.shrink;
                 this.alpha -= this.fade;
             }
+
             render(c) {
                 if (this.alpha < 0.1 || this.size < 1) return;
+
                 c.save();
                 c.globalCompositeOperation = "lighter";
+
                 const x = this.pos.x;
                 const y = this.pos.y;
                 const r = this.size / 2;
                 const gradient = c.createRadialGradient(x, y, 0.1, x, y, r);
+
                 gradient.addColorStop(0.1, `rgba(255,255,255,${this.alpha})`);
                 gradient.addColorStop(0.8, `hsla(${this.color},100%,50%,${this.alpha})`);
-                gradient.addColorStop(1, `hsla(${this.color},100%,50%,0.1)`);
+                gradient.addColorStop(1, `hsla(${this.color},100%,50%,0)`);
                 c.fillStyle = gradient;
                 c.beginPath();
                 c.arc(x, y, this.flick ? Math.random() * this.size : this.size, 0, Math.PI * 2, true);
                 c.closePath();
                 c.fill();
+
+                c.beginPath();
+                const trailLength = Math.min(10, Math.sqrt(this.vel.x ** 2 + this.vel.y ** 2) * 2);
+                c.strokeStyle = `hsla(${this.color},100%,50%,${this.alpha * 0.5})`;
+                c.moveTo(x - this.vel.x * trailLength, y - this.vel.y * trailLength);
+                c.lineTo(x, y);
+                c.stroke();
+
                 c.restore();
             }
         }
@@ -68,6 +81,7 @@ export default function FireworksCanvas({ width, height }) {
                 this.shrink = 0.999;
                 this.gravity = 0.01;
             }
+
             explode() {
                 const count = Math.random() * 10 + 80;
                 for (let i = 0; i < count; i++) {
@@ -82,16 +96,20 @@ export default function FireworksCanvas({ width, height }) {
                     particle.shrink = Math.random() * 0.05 + 0.93;
                     particle.flick = true;
                     particle.color = this.explosionColor;
+                    particle.fade = Math.random() * 0.01 + 0.003;
                     particles.push(particle);
                 }
             }
+
             render(c) {
                 if (this.alpha < 0.1 || this.size < 1) return;
+
                 c.save();
                 c.globalCompositeOperation = "lighter";
                 const x = this.pos.x;
                 const y = this.pos.y;
                 const r = this.size / 2;
+
                 const gradient = c.createRadialGradient(x, y, 0.1, x, y, r);
                 gradient.addColorStop(0.1, `rgba(255,255,255,${this.alpha})`);
                 gradient.addColorStop(1, `rgba(0,0,0,${this.alpha})`);
