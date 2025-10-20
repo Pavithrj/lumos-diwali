@@ -43,9 +43,9 @@ Check it out live: [Live Demo](https://pavithrj.github.io/lumos-diwali)
 
 ## 📸 Screenshots
 
-| 🧭 Navbar                               |
-| --------------------------------------- |
-| ![Navbar](./src/assets/demo/navbar.png) |
+| 🏠 Home Page                                 |
+| -------------------------------------------- |
+| ![Home Page](./src/assets/demo/HomePage.png) |
 
 ---
 
