@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
 
 export default function FireworksCanvas({ width, height }) {
     const canvasRef = useRef(null);
