@@ -1,16 +1,145 @@
-# React + Vite
+# 🗂️ Table of Contents
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [🗂️ Table of Contents](#️-table-of-contents)
+  - [📌 Lumos-Diwali](#-lumos-diwali)
+  - [🌍 Live Demo](#-live-demo)
+  - [✨ Features](#-features)
+  - [📸 Screenshots](#-screenshots)
+  - [⚙️ Tech Stack](#️-tech-stack)
+  - [📂 Folder Structure](#-folder-structure)
+    - [🧰 Installation Steps](#-installation-steps)
 
-Currently, two official plugins are available:
+## 📌 Lumos-Diwali
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Lumos Diwali is a modern, immersive web experience that blends design, interactivity, and animation to celebrate the beauty of Diwali.
 
-## React Compiler
+Developed using ReactJS, TailwindCSS, and Vite, it delivers a smooth, high-performance experience with realistic fireworks that burst across a sleek dark theme.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is not just about visuals — it’s about reimagining cultural celebrations through modern web technologies and creative coding.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌍 Live Demo
+
+Check it out live: [Live Demo](https://pavithrj.github.io/lumos-diwali)
+
+---
+
+## ✨ Features
+
+- 🌑 Dark Festive Theme — Immersive black background with glowing visuals.
+
+- 🎇 Realistic Fireworks — Fireworks launch smoothly and burst beautifully with lights.
+
+- 🔁 Continuous Animation — Fireworks loop for a few seconds per click, just like real celebrations.
+
+- 🪔 Interactive Experience — A “Celebrate Diwali” button triggers a fireworks show every time you click.
+
+- ⚡ Optimized with Vite — Fast build times and instant updates for development.
+
+- 🎨 TailwindCSS Design — Clean, responsive, and modern UI powered by TailwindCSS.
+
+---
+
+## 📸 Screenshots
+
+| 🧭 Navbar                               |
+| --------------------------------------- |
+| ![Navbar](./src/assets/demo/navbar.png) |
+
+---
+
+## ⚙️ Tech Stack
+
+![Vite](https://img.shields.io/badge/Vite-563D7C?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-0EA5E9?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+---
+
+## 📂 Folder Structure
+
+```
+lumos-diwali/
+├── src/
+│   ├── assets/
+│   │   ├── about/
+│   │   │   └── resume.pdf
+│   │   ├── demo/
+│   │   │   ├── about.png
+│   │   │   ├── home.png
+│   │   │   ├── navbar.png
+│   │   │   └── skills.png
+│   │   ├── home/
+│   │   │   └── hero-pic.png
+│   │   ├── navbar/
+│   │   │   └── pj-logo.png
+│   │   ├── Projects/
+│   │   │   ├── imageOne.png
+│   │   │   ├── imageTwo.png
+│   │   │   ├── index.js
+│   │   │   └── live-calendar.png
+│   ├── components/
+│   │   ├── icons/
+│   │   │   ├── contact/
+│   │   │   │   ├── GithubIcon.jsx
+│   │   │   │   ├── LinkedInIcon.jsx
+│   │   │   │   └── TelegramIcon.jsx
+│   │   │   ├── navbar/
+│   │   │   │   ├── CloseIcon.jsx
+│   │   │   │   └── HamburgerIcon.jsx
+│   │   │   ├── skills/
+│   │   │   │   ├── CSSIcon.jsx
+│   │   │   │   ├── ExpressJsIcon.jsx
+│   │   │   │   ├── HTMLIcon.jsx
+│   │   │   │   ├── JavaScriptIcon.jsx
+│   │   │   │   ├── JestIcon.jsx
+│   │   │   │   ├── MaterialUIIcon.jsx
+│   │   │   │   ├── MongoDBIcon.jsx
+│   │   │   │   ├── MySQLIcon.jsx
+│   │   │   │   ├── NodeJsIcon.jsx
+│   │   │   │   ├── PostmanIcon.jsx
+│   │   │   │   ├── ReactJsIcon.jsx
+│   │   │   │   └── TailwindCSSIcon.jsx
+│   │   │   └── index.js
+│   │   ├── layout/
+│   │   │   ├── Footer.jsx
+│   │   │   └── Navbar.jsx
+│   │   ├── sections/
+│   │   │   ├── About.jsx
+│   │   │   ├── Contact.jsx
+│   │   │   ├── Home.jsx
+│   │   │   ├── Projects.jsx
+│   │   │   ├── ScrollRestoration.jsx
+│   │   │   └── Skills.jsx
+│   ├── data/
+│   │   ├── projects/
+│   │   │   └── ProjectsData.jsx
+│   ├── pages/
+│   │   ├── AllProjects.jsx
+│   │   └── Portfolio.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+└── vite.config.js
+```
+
+---
+
+### 🧰 Installation Steps
+
+```bash
+git clone https://github.com/Pavithrj/lumos-diwali.git
+cd lumos-diwali
+npm install
+npm run dev
+```
