@@ -84,11 +84,18 @@ lumos-diwali/
 
 ---
 
-### 🧰 Installation Steps
+## 🧰 Installation Steps
 
 ```bash
+# Clone the repository
 git clone https://github.com/Pavithrj/lumos-diwali.git
+
+# Navigate to the project folder
 cd lumos-diwali
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm run dev
 ```
