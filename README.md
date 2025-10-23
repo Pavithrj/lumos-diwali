@@ -1,13 +1,13 @@
 # 🗂️ Table of Contents
 
 - [🗂️ Table of Contents](#️-table-of-contents)
-  - [📌 Lumos-Diwali](#-lumos-diwali)
-  - [🌍 Live Demo](#-live-demo)
-  - [✨ Features](#-features)
-  - [📸 Screenshots](#-screenshots)
-  - [⚙️ Tech Stack](#️-tech-stack)
-  - [📂 Folder Structure](#-folder-structure)
-    - [🧰 Installation Steps](#-installation-steps)
+- [📌 Lumos-Diwali](#-lumos-diwali)
+- [🌍 Live Demo](#-live-demo)
+- [✨ Features](#-features)
+- [📸 Screenshots](#-screenshots)
+- [⚙️ Tech Stack](#️-tech-stack)
+- [📂 Folder Structure](#-folder-structure)
+- [🧰 Installation Steps](#-installation-steps)
 
 ## 📌 Lumos-Diwali
 
@@ -64,61 +64,10 @@ Check it out live: [Live Demo](https://pavithrj.github.io/lumos-diwali)
 lumos-diwali/
 ├── src/
 │   ├── assets/
-│   │   ├── about/
-│   │   │   └── resume.pdf
-│   │   ├── demo/
-│   │   │   ├── about.png
-│   │   │   ├── home.png
-│   │   │   ├── navbar.png
-│   │   │   └── skills.png
-│   │   ├── home/
-│   │   │   └── hero-pic.png
-│   │   ├── navbar/
-│   │   │   └── pj-logo.png
-│   │   ├── Projects/
-│   │   │   ├── imageOne.png
-│   │   │   ├── imageTwo.png
-│   │   │   ├── index.js
-│   │   │   └── live-calendar.png
+│   │   └── LumosDiwaliLogo.png
 │   ├── components/
-│   │   ├── icons/
-│   │   │   ├── contact/
-│   │   │   │   ├── GithubIcon.jsx
-│   │   │   │   ├── LinkedInIcon.jsx
-│   │   │   │   └── TelegramIcon.jsx
-│   │   │   ├── navbar/
-│   │   │   │   ├── CloseIcon.jsx
-│   │   │   │   └── HamburgerIcon.jsx
-│   │   │   ├── skills/
-│   │   │   │   ├── CSSIcon.jsx
-│   │   │   │   ├── ExpressJsIcon.jsx
-│   │   │   │   ├── HTMLIcon.jsx
-│   │   │   │   ├── JavaScriptIcon.jsx
-│   │   │   │   ├── JestIcon.jsx
-│   │   │   │   ├── MaterialUIIcon.jsx
-│   │   │   │   ├── MongoDBIcon.jsx
-│   │   │   │   ├── MySQLIcon.jsx
-│   │   │   │   ├── NodeJsIcon.jsx
-│   │   │   │   ├── PostmanIcon.jsx
-│   │   │   │   ├── ReactJsIcon.jsx
-│   │   │   │   └── TailwindCSSIcon.jsx
-│   │   │   └── index.js
-│   │   ├── layout/
-│   │   │   ├── Footer.jsx
-│   │   │   └── Navbar.jsx
-│   │   ├── sections/
-│   │   │   ├── About.jsx
-│   │   │   ├── Contact.jsx
-│   │   │   ├── Home.jsx
-│   │   │   ├── Projects.jsx
-│   │   │   ├── ScrollRestoration.jsx
-│   │   │   └── Skills.jsx
-│   ├── data/
-│   │   ├── projects/
-│   │   │   └── ProjectsData.jsx
-│   ├── pages/
-│   │   ├── AllProjects.jsx
-│   │   └── Portfolio.jsx
+│   │   ├── BackgroundAnimation.jsx
+│   │   └── FireworksCanvas.jsx
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
